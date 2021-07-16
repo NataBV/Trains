@@ -21,13 +21,10 @@ public class ShowTrains {
 	public String printTrain(List<Train> trains, int trainNumber) {
 		Sorting sorted = new Sorting();
 		int index = sorted.findTrainByNumber(trains, trainNumber);
-		
-		System.out.println("index=" + index);
-		
+				
 		Train t = trains.get(index);
 		String res;
-		
-		
+				
 		res = ("Train's information:" + "\n" + t.getDestination()) + " " + (t.getTrainNumber() + " " + t.getDepartureTime().getHour() + "h "
 			+ t.getDepartureTime().getMin() + "m " + "\n");
 		

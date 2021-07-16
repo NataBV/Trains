@@ -21,6 +21,8 @@ public class Schedule {
 
 	public void addTrain(Train t) {
 		trains.add(t);
+		// add exception for size
+		// add exception for time values
 	}
 
 	@Override

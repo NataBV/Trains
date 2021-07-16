@@ -26,14 +26,19 @@ public class Main {
 		String p = view.printTrainSchedule(trSort);
 		System.out.println(p + "\n");
 
-		//System.out.println(view.printTrainSchedule(tr.getTrains()));
+		// System.out.println(view.printTrainSchedule(tr.getTrains()));
 
 		int findTrain = 137;
-		
+
 		p = view.printTrain(tr.getTrains(), findTrain);
 		System.out.println("\n" + p + "\n");
-	
-
+		
+		String dest = "London";
+		trSort = sorted.sortByDepartureTime(sorted.selectByDestination(dest, tr.getTrains()));
+		
+		p = view.printTrainSchedule(trSort);
+		System.out.println("Trains to " + dest+ "\n" + p + "\n");
+		
 	}
 
 }
