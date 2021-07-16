@@ -31,12 +31,15 @@ public class Sorting {
 	}
 	
 	public int findTrainByNumber(List<Train> trains, int trainNumber) {
-		int index = 0;
+		int index = -1;
 		for(Train t: trains) {
 			if (t.getTrainNumber() == trainNumber) {
 				index = trains.indexOf(t);
 				
 			}
+		}
+		if (index == -1) {
+			throw new RuntimeException("There is no train with entered number.");
 		}
 		return index;
 	}
