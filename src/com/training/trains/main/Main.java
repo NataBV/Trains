@@ -7,7 +7,12 @@ import com.training.trains.logic.*;
 import com.training.trains.view.*;
 
 public class Main {
-
+	
+	/* Создайте класс Train, содержащий поля: название пункта назначения,
+	номер поезда, время отправления. Создайте данные в массив из пяти
+	элементов типа Train, добавьте возможность сортировки и вывода элементов
+	массива по требуемым критериям */
+	
 	public static void main(String[] args) {
 		Schedule tr = new Schedule();
 
