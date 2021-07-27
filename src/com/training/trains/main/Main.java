@@ -26,10 +26,9 @@ public class Main {
 		//sort table by Train Number
 		List<Train> trSorted;
 		trSorted = sort.sortByTrainNumber(trains.getTrains());
+		System.out.println(view.printTrainSchedule(trSorted));
 
-		String toPrint = view.printTrainSchedule(trSorted);
-		System.out.println(toPrint);
-
+		//entering Train Number to search
 		System.out.print("Pleas enter train's number to search:  \n");
 		Scanner sc = new Scanner(System.in);
 		int findTrain = sc.nextInt();
@@ -37,15 +36,12 @@ public class Main {
 		
 		//try to find train by number
 		try {
-		toPrint = view.printTrain(trains.getTrains(), findTrain);
-		System.out.println(toPrint);
+		System.out.println(view.printTrain(trains.getTrains(), findTrain));
 		} catch (IndexOutOfBoundsException e) {}
 				
 		//sort table by Destination with sorted Time
 		trSorted = sort.sortByDestination(trains.getTrains());
-
-		toPrint = view.printTrainSchedule(trSorted);
-		System.out.println(toPrint);
+		System.out.println(view.printTrainSchedule(trSorted));
 		
 	}
 
