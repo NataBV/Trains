@@ -8,15 +8,14 @@ public class ShowTrains {
 
 	public String printTrainSchedule(List<Train> trains) {
 		String res = "";
-
 		for (Train t : trains) {
-			res = res + ((t.getDestination()) + " " + (t.getTrainNumber() + " " + t.getDepartureTime().getHour() + "h "
+			res = res + ((t.getDestination()) + " " + (t.getTrainNumber() +
+					" " + t.getDepartureTime().getHour() + "h "
 					+ t.getDepartureTime().getMin() + "m " + "\n"));
-
 		}
-
 		return res;
 	}
+	
 
 	public String printTrain(List<Train> trains, int trainNumber) {
 		Sorting sorted = new Sorting();

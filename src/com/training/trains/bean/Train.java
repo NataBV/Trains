@@ -10,7 +10,6 @@ public class Train {
 		this.destination = destination;
 		this.trainNumber = trainNumber;
 		this.departureTime = departureTime;
-
 	}
 
 	public void setTrain(String destination, int trainNumber, Time departureTime) {
@@ -18,7 +17,6 @@ public class Train {
 		this.destination = destination;
 		this.trainNumber = trainNumber;
 		this.departureTime = departureTime;
-
 	}
 
 	public String getDestination() {

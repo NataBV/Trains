@@ -18,7 +18,6 @@ public class Main {
 		trains.addTrain(new Train("London", 137, new Time(21, 20)));
 		trains.addTrain(new Train("Minsk", 127, new Time(11, 14)));
 		trains.addTrain(new Train("Paris", 542, new Time(16, 45)));
-		trains.addTrain(new Train("Paris", 582, new Time(17, 55)));
 
 		Sorting sort = new Sorting();
 		ShowTrains view = new ShowTrains();
@@ -31,12 +30,12 @@ public class Main {
 		//entering Train Number to search
 		System.out.print("Pleas enter train's number to search:  \n");
 		Scanner sc = new Scanner(System.in);
-		int findTrain = sc.nextInt();
+		int trainNumber = sc.nextInt();
 		sc.close();
 		
 		//try to find train by number
 		try {
-		System.out.println(view.printTrain(trains.getTrains(), findTrain));
+		System.out.println(view.printTrain(trains.getTrains(), trainNumber));
 		} catch (IndexOutOfBoundsException e) {}
 				
 		//sort table by Destination with sorted Time

@@ -5,10 +5,9 @@ import java.util.List;
 
 public class Schedule {
 	List<Train> trains;
-	final int size = 5;
 
 	public Schedule() {
-		trains = new ArrayList<Train>(size);
+		trains = new ArrayList<Train>();
 	}
 
 	public void setTrains(List<Train> trains) {
@@ -21,7 +20,6 @@ public class Schedule {
 
 	public void addTrain(Train t) {
 		trains.add(t);
-		// add exception for size
 		// add exception for time values
 	}
 

@@ -87,8 +87,7 @@ public class Sorting {
 			if ( timeLast < timeNext) {
 				Train tmp = tr.get(i - 1);
 				tr.set(i - 1, tr.get(i));
-				tr.set(i, tmp);
-				
+				tr.set(i, tmp);				
 			} 		
 		}
 		return tr;
